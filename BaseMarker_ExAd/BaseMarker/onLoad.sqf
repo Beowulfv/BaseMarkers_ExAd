@@ -47,7 +47,7 @@ fnc_markerOn = {
             };
         }
         forEach (allMissionObjects "Exile_Construction_Flag_Static");
-		["Success",["Base Markers toggled on."]] call BIS_fnc_showNotification;
+		["Success",["Base Markers toggled on."]] call ExileClient_gui_toaster_addTemplateToast;
 };
  
 fnc_markerOff = {
@@ -65,5 +65,5 @@ fnc_markerOff = {
             };
         }
         forEach (allMissionObjects "Exile_Construction_Flag_Static");
-		["Whoops",["Base Markers toggled off."]] call BIS_fnc_showNotification;
+		["Whoops",["Base Markers toggled off."]] call ExileClient_gui_toaster_addTemplateToast;
 };
