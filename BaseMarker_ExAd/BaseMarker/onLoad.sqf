@@ -65,5 +65,5 @@ fnc_markerOff = {
             };
         }
         forEach (allMissionObjects "Exile_Construction_Flag_Static");
-	["SuccessTitleAndText",["Base Markers toggled off."]] call ExileClient_gui_toaster_addTemplateToast;
+	["ErrorTitleAndText",["Base Markers toggled off."]] call ExileClient_gui_toaster_addTemplateToast;
 };
